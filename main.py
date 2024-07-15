@@ -1,26 +1,16 @@
-import numpy as np
-from time import time
+import tkinter as tk
+from tkinter import ttk
+from PIL import Image, ImageTk
 
 
-class Dog:
-    def __init__(self, name, age) -> None:
-        self.__name = name
-        self.__age = age
+root = tk.Tk()
+root.title('Python Development')
+root.geometry('800x450+300+100')
 
-    def bark(self):
-        return f'{self.__name} is barking!'
+imagem = Image.open('./images/mario.webp').resize((600, 450))
+photo = ImageTk.PhotoImage(imagem)
 
-    def get_name(self):
-        return self.__name
+label = ttk.Label(root, image=photo).pack()
 
 
-def main():
-    rex = Dog('Rex', 10)
-    print(rex.get_name())
-    print(rex.__class__.__name__)
-    print(Dog.__name__)
-    print(rex.bark())
-
-
-if __name__ == '__main__':
-    main()
+root.mainloop()

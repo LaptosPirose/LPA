@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/angelomoura/Library/CloudStorage/OneDrive-Personal/Workspace/Academico_LPA/venv"
+set -gx VIRTUAL_ENV "/Users/angelomoura/Documents/Workspace/Python__Uninter/LPA/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
