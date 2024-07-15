@@ -10,5 +10,5 @@ imagem = Image.open('./images/mario.webp').resize((600, 450))
 photo = ImageTk.PhotoImage(imagem)
 
 label = ttk.Label(root, image=photo).pack()
-
+#
 root.mainloop()
